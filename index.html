@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>threejs-factory 検証ランチャー（60本）</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,"Hiragino Sans",sans-serif;
+background:#12141c;color:#fff;padding:16px calc(16px + env(safe-area-inset-right)) 40px calc(16px + env(safe-area-inset-left))}
+h1{font-size:18px;margin:8px 4px 4px}h2{font-size:14px;margin:20px 4px 8px;color:#9fd3ff}
+p.sub{font-size:12px;color:#8a90a6;margin:0 4px 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.c{display:flex;flex-direction:column;gap:4px;padding:14px 12px;background:#1e2130;border-radius:14px;
+text-decoration:none;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.c:active{transform:scale(.97)}.t{font-size:15px;font-weight:700}.id{font-size:10px;color:#7a819a}
+.fps{position:fixed;left:8px;bottom:8px;font-size:11px;color:#4caf50;background:#0009;padding:4px 8px;border-radius:8px}
+</style></head><body>
+<h1>threejs-factory 検証ランチャー</h1>
+<p class="sub">全60本。タップで起動。ブラウザ単体では広告はテスト用シミュレータ表示。</p>
+<h2>だい2だん（マッシュアップ編・TM 30本）</h2>
+<div class="grid">
+  <a class="c" href="./TMBeetleTug/index.html"><span class="t">カブトつなひき</span><span class="id">TMBeetleTug</span></a>
+  <a class="c" href="./TMCastleSplash/index.html"><span class="t">みずふうせん城せめ</span><span class="id">TMCastleSplash</span></a>
+  <a class="c" href="./TMCityTarzan/index.html"><span class="t">ビルのターザン</span><span class="id">TMCityTarzan</span></a>
+  <a class="c" href="./TMDinoRope/index.html"><span class="t">きょうりゅうなわとび</span><span class="id">TMDinoRope</span></a>
+  <a class="c" href="./TMFireSquirt/index.html"><span class="t">しょうぼう水でっぽう</span><span class="id">TMFireSquirt</span></a>
+  <a class="c" href="./TMFossilBrush/index.html"><span class="t">かせきはっくつ</span><span class="id">TMFossilBrush</span></a>
+  <a class="c" href="./TMGhostHide/index.html"><span class="t">おばけたいじ</span><span class="id">TMGhostHide</span></a>
+  <a class="c" href="./TMHanabiShoku/index.html"><span class="t">はなびしょくにん</span><span class="id">TMHanabiShoku</span></a>
+  <a class="c" href="./TMHeavySumo/index.html"><span class="t">じゅうきずもう</span><span class="id">TMHeavySumo</span></a>
+  <a class="c" href="./TMKawaraKarate/index.html"><span class="t">かわらわりチョップ</span><span class="id">TMKawaraKarate</span></a>
+  <a class="c" href="./TMLavaHop/index.html"><span class="t">ようがんホッピング</span><span class="id">TMLavaHop</span></a>
+  <a class="c" href="./TMMagicCups/index.html"><span class="t">マジックカップ</span><span class="id">TMMagicCups</span></a>
+  <a class="c" href="./TMMagnetFish/index.html"><span class="t">ちんぼつ船サルベージ</span><span class="id">TMMagnetFish</span></a>
+  <a class="c" href="./TMMoonMari/index.html"><span class="t">つきのまりつき</span><span class="id">TMMoonMari</span></a>
+  <a class="c" href="./TMNinjaDaruma/index.html"><span class="t">にんじゃだるま</span><span class="id">TMNinjaDaruma</span></a>
+  <a class="c" href="./TMPancakeFlip/index.html"><span class="t">パンケーキがえし</span><span class="id">TMPancakeFlip</span></a>
+  <a class="c" href="./TMPirateDig/index.html"><span class="t">かいぞくトレジャー</span><span class="id">TMPirateDig</span></a>
+  <a class="c" href="./TMRobotTaiso/index.html"><span class="t">ロボットたいそう</span><span class="id">TMRobotTaiso</span></a>
+  <a class="c" href="./TMRoombaOni/index.html"><span class="t">そうじきオニごっこ</span><span class="id">TMRoombaOni</span></a>
+  <a class="c" href="./TMSomenCatch/index.html"><span class="t">ながしそうめん名人</span><span class="id">TMSomenCatch</span></a>
+  <a class="c" href="./TMSpaceKendama/index.html"><span class="t">うちゅうけんだま</span><span class="id">TMSpaceKendama</span></a>
+  <a class="c" href="./TMSpaceTamaire/index.html"><span class="t">うちゅうたまいれ</span><span class="id">TMSpaceTamaire</span></a>
+  <a class="c" href="./TMStiltsCircus/index.html"><span class="t">サーカスたけうま</span><span class="id">TMStiltsCircus</span></a>
+  <a class="c" href="./TMSubPearl/index.html"><span class="t">せんすいかんパール</span><span class="id">TMSubPearl</span></a>
+  <a class="c" href="./TMSushiTower/index.html"><span class="t">かいてんずしタワー</span><span class="id">TMSushiTower</span></a>
+  <a class="c" href="./TMTrainDomino/index.html"><span class="t">でんしゃドミノ</span><span class="id">TMTrainDomino</span></a>
+  <a class="c" href="./TMTyphoonKasa/index.html"><span class="t">たいふうのかさ</span><span class="id">TMTyphoonKasa</span></a>
+  <a class="c" href="./TMYokaiKagefumi/index.html"><span class="t">ようかいかげふみ</span><span class="id">TMYokaiKagefumi</span></a>
+  <a class="c" href="./TMZombieRedLight/index.html"><span class="t">ゾンビがころんだ</span><span class="id">TMZombieRedLight</span></a>
+  <a class="c" href="./TMZoukinRace/index.html"><span class="t">ぞうきんドリフト</span><span class="id">TMZoukinRace</span></a>
+</div>
+<h2>だい1だん（TF 30本）</h2>
+<div class="grid">
+  <a class="c" href="./TFAmeCatch/index.html"><span class="t">あめだまキャッチ</span><span class="id">TFAmeCatch</span></a>
+  <a class="c" href="./TFBalloonPop/index.html"><span class="t">ふうせんわり</span><span class="id">TFBalloonPop</span></a>
+  <a class="c" href="./TFBottleFlip/index.html"><span class="t">ボトルフリップ</span><span class="id">TFBottleFlip</span></a>
+  <a class="c" href="./TFBoxPack/index.html"><span class="t">はこづめめいじん</span><span class="id">TFBoxPack</span></a>
+  <a class="c" href="./TFCanTumble/index.html"><span class="t">カンたおし</span><span class="id">TFCanTumble</span></a>
+  <a class="c" href="./TFCubeMemory/index.html"><span class="t">そっくりキューブ</span><span class="id">TFCubeMemory</span></a>
+  <a class="c" href="./TFDarumaOtoshi/index.html"><span class="t">だるまおとし</span><span class="id">TFDarumaOtoshi</span></a>
+  <a class="c" href="./TFDodgeBall/index.html"><span class="t">ドッジボール</span><span class="id">TFDodgeBall</span></a>
+  <a class="c" href="./TFEraserSumo/index.html"><span class="t">けしごむずもう</span><span class="id">TFEraserSumo</span></a>
+  <a class="c" href="./TFGoldfishScoop/index.html"><span class="t">きんぎょすくい</span><span class="id">TFGoldfishScoop</span></a>
+  <a class="c" href="./TFJenga/index.html"><span class="t">つみきひきぬき</span><span class="id">TFJenga</span></a>
+  <a class="c" href="./TFJumpRope/index.html"><span class="t">なわとび</span><span class="id">TFJumpRope</span></a>
+  <a class="c" href="./TFKendama/index.html"><span class="t">けんだま</span><span class="id">TFKendama</span></a>
+  <a class="c" href="./TFKiteFly/index.html"><span class="t">たこあげ</span><span class="id">TFKiteFly</span></a>
+  <a class="c" href="./TFMarbleShot/index.html"><span class="t">ビーだまはじき</span><span class="id">TFMarbleShot</span></a>
+  <a class="c" href="./TFPaperPlane/index.html"><span class="t">かみひこうき</span><span class="id">TFPaperPlane</span></a>
+  <a class="c" href="./TFPencilBalance/index.html"><span class="t">えんぴつバランス</span><span class="id">TFPencilBalance</span></a>
+  <a class="c" href="./TFSeesawJump/index.html"><span class="t">シーソーロケット</span><span class="id">TFSeesawJump</span></a>
+  <a class="c" href="./TFShateki/index.html"><span class="t">しゃてきや</span><span class="id">TFShateki</span></a>
+  <a class="c" href="./TFSlopeRoll/index.html"><span class="t">さかみちコロコロ</span><span class="id">TFSlopeRoll</span></a>
+  <a class="c" href="./TFSnowballFight/index.html"><span class="t">ゆきがっせん</span><span class="id">TFSnowballFight</span></a>
+  <a class="c" href="./TFSpinTop/index.html"><span class="t">コマまわし</span><span class="id">TFSpinTop</span></a>
+  <a class="c" href="./TFStackTower/index.html"><span class="t">つみあげタワー</span><span class="id">TFStackTower</span></a>
+  <a class="c" href="./TFSteppingStones/index.html"><span class="t">とびいし</span><span class="id">TFSteppingStones</span></a>
+  <a class="c" href="./TFStoneSkip/index.html"><span class="t">みずきり</span><span class="id">TFStoneSkip</span></a>
+  <a class="c" href="./TFSunayama/index.html"><span class="t">すなやまチキンレース</span><span class="id">TFSunayama</span></a>
+  <a class="c" href="./TFTakeCopter/index.html"><span class="t">タケコプター</span><span class="id">TFTakeCopter</span></a>
+  <a class="c" href="./TFTargetHole/index.html"><span class="t">ねらってポトン</span><span class="id">TFTargetHole</span></a>
+  <a class="c" href="./TFWanage/index.html"><span class="t">わなげ</span><span class="id">TFWanage</span></a>
+  <a class="c" href="./TFWhackMole/index.html"><span class="t">モグラたたき</span><span class="id">TFWhackMole</span></a>
+</div>
+<div class="fps" id="fps">fps: --</div>
+<script>
+let n=0,last=performance.now();function loop(t){n++;if(t-last>=500){document.getElementById('fps').textContent='fps: '+Math.round(n*1000/(t-last));n=0;last=t;}requestAnimationFrame(loop);}requestAnimationFrame(loop);
+</script>
+</body></html>

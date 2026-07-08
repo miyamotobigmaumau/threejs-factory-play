@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>きんぎょすくい</title>
+<link rel="stylesheet" href="lib/shell.css">
+</head>
+<body>
+<script>
+// ==== 設定（ネイティブシェル / ユーザーが差し替える箇所）====
+// AdMob 頻度設定の上書き（省略時は docs/AD_REVENUE_DESIGN.md の既定値）
+// window.AD_CONFIG = { interstitialEveryNPlays: 2 };
+// Firebase バックエンド有効化（backend/ セットアップ後に設定値を貼る）
+// window.BACKEND_CONFIG = { apiKey: "...", authDomain: "...", projectId: "..." };
+</script>
+<script src="lib/three.min.js"></script>
+<script src="lib/ads.js"></script>
+<script src="lib/backend.js"></script>
+<script src="lib/shell.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

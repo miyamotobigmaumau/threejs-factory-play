@@ -1,0 +1,35 @@
+/* shell.css — threejs-factory 共通 UI */
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { width: 100%; height: 100%; overflow: hidden; position: fixed; touch-action: none; }
+body { font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #000; user-select: none; -webkit-user-select: none; }
+canvas { display: block; }
+
+.sh-hud { position: fixed; top: env(safe-area-inset-top, 0); left: 0; right: 0; padding: 14px 18px; pointer-events: none; z-index: 10; }
+.sh-score { font-size: 34px; font-weight: 800; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.45); text-align: center; }
+.sh-hint { font-size: 14px; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,.5); text-align: center; margin-top: 6px; opacity: .9; white-space: pre-line; }
+
+.sh-panel {
+  position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: min(82vw, 340px); padding: 28px 24px calc(24px + env(safe-area-inset-bottom, 0));
+  background: rgba(255,255,255,.94); border-radius: 24px; text-align: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,.35); z-index: 20;
+}
+.sh-panel h1 { font-size: 30px; color: #222; margin-bottom: 10px; }
+.sh-panel h2 { font-size: 22px; color: #222; margin-bottom: 8px; }
+.sh-howto { font-size: 15px; color: #555; margin-bottom: 14px; line-height: 1.6; white-space: pre-line; }
+.sh-best { font-size: 14px; color: #888; margin-bottom: 12px; min-height: 1em; }
+/* TOP画面のきろく表示（常時表示・少し目立たせる） */
+.sh-best-top { font-size: 16px; font-weight: 700; color: #555; background: #f2f3f7; border-radius: 14px; padding: 10px 12px; margin-bottom: 14px; }
+.sh-best-top .sh-best-label { display: block; font-size: 11px; font-weight: 400; color: #9aa0b0; margin-bottom: 2px; }
+.sh-final { font-size: 44px; font-weight: 800; color: #ff7043; margin: 6px 0 10px; }
+.sh-new { font-size: 16px; font-weight: 700; color: #ffb300; margin-bottom: 10px; animation: shPulse 1s infinite; }
+@keyframes shPulse { 50% { transform: scale(1.08); } }
+
+.sh-btn {
+  display: block; width: 100%; padding: 14px; margin-top: 10px;
+  font-size: 17px; font-weight: 700; border: 0; border-radius: 28px; cursor: pointer;
+  font-family: inherit;
+}
+.sh-btn:active { transform: scale(.96); }
+.sh-btn-main { background: #ff7043; color: #fff; box-shadow: 0 4px 0 #d84315; }
+.sh-btn-reward { background: #7e57c2; color: #fff; box-shadow: 0 4px 0 #4d2c91; font-size: 15px; }
